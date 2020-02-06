@@ -1,0 +1,118 @@
+<html>
+ <head>
+  <title>booking details
+  </title>
+ <head>
+    <style>
+        .gk{
+            margin-left: 500mm;
+            margin-top: 5px;
+        }
+    </style>
+ <body style="background-color:powderblue;">
+    <h1 class="gk" id="t" style="margin-left:1400px;">0  </h1>
+<center>
+
+  <h1>BOOKING DETAILS</h1>
+<p>NAME: <input type ="text" id="pass" name="name" required on="k()"> </p>
+<p>AGE: <input type ="text" id="passage" name="year" required></p>
+
+   CLASS PREFFRENCE: </br>
+<left>
+<input type="radio" id="r1" name= "Tier" value= "AC1" >AC1</br>
+<input type="radio" id="r2" name= "Tier" value= "AC2" >AC2</br>
+<input type="radio" id="r3" name= "Tier" value= "AC3">AC3</br> 
+<input type="radio" id="r4" name= "Tier" value= "SLEEPER">SLEEPER</br> 
+</left>
+<p>FROM: <input type ="text" id="arr" name="from" required></p>
+<p>TO: <input type ="text" id="dest" name="to" required></p>
+<input type="button"  value="Submit" onclick="book()">
+<input type="reset" value="Reset">
+</center>
+</body>
+<script language="javascript">
+
+var time=0;var sec=0,mints=0;
+        var i;
+        var ga;
+      //   k();
+
+function k(){
+   window.setInterval(g,120);
+
+}
+function book()
+{
+window.setInterval(g,120); 
+var pass = document.getElementById("pass").value; 
+var passage = document.getElementById("passage").value;
+var r1 = document.getElementById("r1");
+var r2 = document.getElementById("r2");
+var r3 = document.getElementById("r3");
+var r4 = document.getElementById("r4");
+var arr = document.getElementById("arr").value;
+var dest = document.getElementById("dest").value;
+
+if(pass == "" || passage== "" || arr == "" ||dest == "")
+     {
+        alert("Field Required");  
+     }      
+      if(r1.checked == true)
+     {
+
+        ga=r1.value;alert(ga);
+         
+     }
+     else if(r2.checked == true)
+     {
+
+        ga=r2.value;alert(ga);
+         
+     }
+     else if(r3.checked == true)
+     {
+
+        ga=r3.value;alert(ga);
+         
+     }
+     else if(r4.checked == true)
+     {
+
+        ga=r4.value;
+        alert(ga);
+         
+     }
+      if(r1.checked == false && r2.checked == false && r3.checked == false && r4.checked == false)
+     {
+         alert("Field required");
+         window.location.reload();
+     }
+     
+     
+    alert('Tickets are booked'+'\n'+'Passenger name:   '+pass+'\n'+'Passenger age:   '+passage+'\n'+'class:    '+ga+'\n'+'Your Arrival:   '+arr+'\n'+'Your Destination:  '+dest+'\n');
+    alert("YOU CAN UPDATE YOUR DETAILS WITHIN 3 MINUTES AND 20 SECONDS . TICKET DETAILS WILL NOT BE CHANGED LATER");
+
+}
+function g(){
+             
+             time++;sec++;
+              document.getElementById("t").innerHTML=(mints+":"+sec);
+              if(sec==60){
+                  mints++;
+                  sec=0;
+              }
+              if(time==200)
+              {
+                  
+                  alert("time out");
+                  k();
+              }
+          }
+          function k()
+          {
+              time=0;
+  
+          }
+</script>
+
+</html>
