@@ -1,0 +1,233 @@
+<html>
+<head><title>Flower shopping</title>>
+    <style>
+        .header {
+  padding-top: 30px;
+  padding: 20px;
+  text-align: left;
+  background: rgb(127, 32, 165);
+  color: white;
+  font-size:xx-large;
+  font-weight: bolder;
+ 
+}
+        #image
+        {
+          padding-left: 100px;
+          padding-top: 25px;
+
+
+
+        }
+        #mainpayment
+        {
+            
+
+            background-color: white;
+            text-align: left;
+            border-collapse: separate;
+            padding-left: 500px;
+            margin-top: -200px;
+            
+            
+        }
+        #subHead
+        {
+            border : 3px solid black;
+            
+            background-color: rgb(105, 105, 105);
+            padding-left: 10px;
+            
+        }
+        #subform
+        {
+            border: 3px solid black;
+            
+            background-color: rgb(175, 172, 172);
+            padding-left: 10px;
+        }
+        #cardholderD
+        {
+            border : 3px solid black;
+            background-color: rgb(105, 105, 105); 
+            padding-left: 10px;
+        }
+        #cardholdersubfrom
+        {
+            border: 3px solid black;
+            background-color: rgb(175, 172, 172);   
+            padding-left: 10px;
+        }
+        table
+        {
+            border-spacing: 10px;
+        }
+       
+        #Refunds
+        {
+           
+         
+            font-weight:bolder;
+        }
+        #footer
+{
+    border: 2px solid black;
+    height: 50px;
+    background: rgb(128, 182, 207);
+    font-size: 40;
+    position: sticky;
+
+
+}
+
+        </style>
+        
+</head>
+<body>
+    <script src="check.js"></script>
+<div class="header">
+    ONLINE SHOP ONLINE
+  </div>
+  <div id = "image">
+    <img src="images.jpg" width="175" height="175">
+ </div>
+    
+    <div id = "mainpayment">
+<div id="form" style="padding-left: 10px;">
+<h1>Secure Payment page</h1>
+<table >
+<tr>
+<td>Select Language</td> <td> <select>
+  <option value="English">English</option>
+  <option value="Hindi">Hindi</option>
+  </select></td></tr>
+  <tr><td>Payment method</td> <td> visa</td></tr>
+  <tr><td>Discription</td><td> Item ordered</td></tr>
+ <tr><td>Amount</td> <td>  $ 100.00</td></tr>
+  </table>
+</div>
+
+<div id="subHead">
+<p1>Card Details</p1></br>
+</div>
+<div id="subform" >
+    
+    <table>
+         <tr><td><p1>You must fill in fields marked with*</p1></td></tr>
+    <tr>
+        <td> *Card number</td>
+        <td><input type = "text" size ="30" id ="card" placeholder="Enter your card number" required></td>
+    </tr>
+    <tr><td> *Security code </td><td><input type ="text" size ="30" id ="sec" placeholder="Enter security code" required></td></tr>
+    <tr><td>*Cardholder's name &nbsp&nbsp</td><td><input type ="text" size ="30" placeholder = "Enter cardholder's name" id ="cardholder" required></td></tr>
+    <tr><td> *Expiry date  </td><td>
+        <select id="mon">
+       <option value="January">January</option>
+       <option value="February">February</option>
+       <option value="March">March</option>
+       <option value="April">April</option>
+       <option value="May">May</option>
+       <option value="June">June</option>
+       <option value="July">July</option>
+       <option value="August">August</option>
+       <option value="September">September</option>
+       <option value="October">October</option>
+       <option value="November">November</option>
+       <option value="December">December</option>
+       </select>
+       &nbsp;&nbsp;&nbsp;
+        <select id="dat">
+           <option value="2017">2017</option>
+           <option value="2018">2018</option>
+           <option value="2019">2019</option>
+           <option value="2020">2020</option>
+           <option value="2021">2021</option>
+           <option value="2022">2022</option>
+           <option value="2023">2023</option>
+           <option value="2024">2024</option>
+           <option value="2025">2025</option>
+           <option value="2026">2026</option>
+           <option value="2027">2027</option>
+           <option value="2028">2028</option>
+           <option value="2029">2029</option>
+           <option value="2030">2030</option>
+           <option value="2031">2031</option>
+           <option value="2032">2032</option>
+           <option value="2033">2033</option>
+           <option value="2034">2034</option>
+           <option value="2035">2035</option>
+           <option value="2036">2036</option>
+           <option value="2037">2037</option>
+           <option value="2038">2038</option>
+           <option value="2039">2039</option>
+           <option value="2040">2040</option>
+           <option value="2041">2041</option>
+           <option value="2042">2042</option>
+           <option value="2043">2043</option>
+           <option value="2044">2044</option>
+           <option value="2045">2045</option>
+           <option value="2046">2046</option>
+           <option value="2047">2047</option>
+           <option value="2048">2048</option>
+           <option value="2049">2049</option>
+           <option value="2050">2050</option>
+           </select></td></tr>
+    </table>
+</div>
+<div id="cardholderD">
+    <p1>Cardholder Details</p1>
+    </div>
+<div id = "cardholdersubfrom">
+    <table>
+         <tr><td><p1> You must fill in fields marked with *</p1></td></tr>
+        <tr><td><p1> *Address 1</td><td><input type = "text" size = "30" placeholder="Enter your address" id = "address" required></p1></td></tr>
+        <tr><td><p1> Address 2 </td><td><input type ="text" size = "30" placeholder="Enter your address" id = "address2"></p1></td></tr>
+        <tr><td><p1> Address 3 </td><td><input type ="text" size = "30" placeholder="Enter your address" id = "address3"></p1></td></tr>
+        <tr><td><p1> *Town/City </td><td><input type ="text" size = "30" placeholder="Enter your address" id = "town" required></p1></td></tr>
+        <tr><td><p1> Region </td><td><input type ="text" size = "30" placeholder="Enter your address" id = "region"></p1></td></tr>
+        <tr><td><p1> *Postalcode/Zip code </td><td><input type = "text" size = "30" placeholder="Enter your address" id = "postal" required></p1></td></tr>
+        <tr><td><p1> *Country</td><td><select id="country">
+            <option value="India">India</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="China">China</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Germany">Germany</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Norway">Norway</option>
+            <option value="Canada">Canada</option>
+            <option value="US">US</option>
+            <option value="Taiwan">taiwan</option>
+            <option value="Finland">Finland</option>
+            <option value="Denmark">Denmark</option>
+            </select></p1></td></tr>
+        <tr><td><p1>Telephone</td><td><input type = "text" size = "30" placeholder = "Enter Current Phone Number" id = "number" required ></p1></td></tr>
+        <tr><td><p1>Fax </td><td><input type = "text" size = "30" id =  "fax" required></p1></td></tr>
+        <tr><td><p1>*Email address</td><td><input type = "text" size = "30" placeholder = "Enter email address" id = "email" required ></p1></td></tr>
+    </table>
+   
+    </div></br></br>
+
+   
+    <button onclick="validate()">Make Payment</button>
+    &nbsp&nbsp<input type="button" value = "Refresh" onclick="history.go(0)" /></br></br>
+    
+<div id = "Refunds">
+   
+Refunds and Returns 
+</div>
+
+
+For more information visit our page 
+<a href="https://www.google.com">Refunds and Returns policy</a></br>
+For help with your payment visit the 
+<a href="https://google.com">WorldPay help</a>
+
+</div>
+
+<div id="footer">
+    Thank you for shopping at Flowershop.Have a nice day
+</div>
+
+   
+</body>
+</html>

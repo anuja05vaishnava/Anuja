@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            DIAGNOAL PROBLEM
+        </title>
+        <script>
+            function compare()
+            {
+                var countAlice=0;
+                var countBob=0;
+            var countrow = document.getElementById("arr1").value;
+            var element = document.getElementById("arr2").value;
+            var arrelement= element.split(" ");
+            var c=0;
+            var sum=0 , csum=0;
+            for(i=0;i<countrow;i++)
+            {
+                for(j=0;j<countrow;j++,c++)
+                {
+                    if(i==j)
+                    {
+                        sum+=parseInt(arrelement[c]);
+                    }
+                    if(i+j==countrow-1)
+                    {
+                        csum+=parseInt(arrelement[c]);
+                    }
+                }
+            }
+            
+           var absoluteDifference = Math.abs(sum-csum);
+          alert(absoluteDifference);
+            
+            }
+
+        </script>
+        <style>
+          #repo
+          {
+            border: 6px solid rgb(78, 7, 11);
+            text-align: center;
+            font-size: larger;
+            font-style:italic;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: darkgrey;
+            height: 100px;
+            width: 1300px;
+            margin-left: 100px;
+            color:darkblue
+            
+            
+          }
+
+          
+         
+         </style>
+    </head>
+        
+    <body bgcolor="#E6E6FA">
+        <div id="repo">
+       <center>
+         <p1>Count of rows for square matrix :   <input type="text" placeholder = "No of rows or coloumn "  id= "arr1" required></p1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <p1>Enter the element of array  :  <input type="text" placeholder="Enter elements" id= "arr2" required></p1> </br></br>
+         <input type="button" value = "Evaluate" onclick= "compare()" > 
+       </center>
+    </div>
+    </bodybgcolor="#E6E6FA">
+</html>

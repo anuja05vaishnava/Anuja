@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>DOM</title>
+
+</head>
+<style>
+</style>
+
+<body>
+    <form id="formId">
+        <center>
+            <h1>ASPIRE DETAILES</h1>
+            <p1>NAME: <input type="text" name="name" placeholder="ENTER YOUR FULL NAME" required></p1>
+            <p1>EMPLOYEE ID: <input type="text" name="eid" placeholder="ENTER YOUR EMPLOYEE ID" required></p1>
+            <p1>ACCESS CARD NO: <input type="text" name="aid" placeholder="ENTER ACSESS CARD NO" required></p1>
+            <p2>ROLE:
+                <input type="radio" name="role" value="Part Time">Part Time<br>
+                <input type="radio" name="role" value="Full Time"> Full Time<br>
+                <input type="radio" name="role" value="Intern"> Intern </p2>
+            <p1>ADHAAR CARD NO: <input type="text" placeholder="ENTER ADHAAR CARD NO " required></p1>
+            <button type="submit" onclick="count_req()">SUbmit</button>
+        </center>
+    </form>
+</body>
+<script>
+    console.log("helllo")
+    function countReq() {
+        var count = 0; var i;
+        var f = document.getElementById('formId').elements;
+        //for (i = 0; i < f.length; i++) {
+            //if (i != 3 && i != 4 && i != 5)
+                count++;
+
+
+        }
+
+        alert(count);
+
+        //require_feild=require_feild.length;
+        //alert("required fields count ="+require_feild);
+
+        //non_required=non_required.length;
+        //alert("NON-required fields count ="+non_required);
+
+
+        // if(name.value == "" || eid.value == "" || aid.value == "" ||adhaar.value == '')
+        //  {
+        //     alert("Field Required");        
+
+        //  }
+
+        //   else if(role1.checked == true)
+        //  {
+
+        //     ga=role1.value;alert(ga);
+
+        //  }
+        //  else if(role2.checked == true)
+        //  {
+
+        //     ga=role2.value;alert(ga);
+
+        //  }
+        //  else if(role3.checked == true)
+        //  {
+
+        //     ga=role3.value;
+        //     alert("k");
+
+        //  }
+        //  else if(role1.checked == false && role1.checked == false && role1.checked == false)
+        //  {
+        //      alert("Field required");
+        //      window.location.reload();
+        //  }
+
+
+
+
+        //      document.write("NAME : "+name.value+"<br>");
+        //      document.write("\nEMPLOYEE ID: "+eid.value+"<br>");
+        //      document.write("\nACCESS NO: "+aid.value+"<br>");
+        //      document.write("\nROLE: "+ga.value+"<br>");
+        //      document.write("\nADHAAR: "+adhaar.value+"<br>");
+
+
+
+    }
+</script>
+<!-- </center> -->
+
+</html>

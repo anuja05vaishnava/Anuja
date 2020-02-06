@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Time Out</title>
+    </head>
+    <style>
+        .gk{
+            margin-left: 325mm;
+            margin-top: 5px;
+        }
+    </style>
+    <body>
+        <h1 class="gk" id="t" style="margin-left:1080px;">time value=0  </h1>
+        <h1>ASPIRE DETAILS</h1>
+        <p>NAME: <input type = "text" id="na"  name="name" placeholder="ENTER YOUR FULL NAME" required></p>
+        <p>EMPLOYEE ID: <input type = "text" id="ed" name="eid" placeholder="ENTER YOUR EMPLOYEE ID" required></p>
+        <p>ACCESS CARD NO: <input type = "text" id="ad" name="aid" placeholder="ENTER ACSESS CARD NO" required></p>
+        <p>ROLE:
+         <input type="radio" id="r1" name="role" value="Part Time">Part Time<br>
+         <input type="radio" id="r2"  name="role" value="Full Time"> Full Time<br>
+         <input type="radio" id="r3"  name="role" value="Intern"> Intern </p>
+        <p>ADHAAR CARD NO: <input type="text" id="cr" placeholder="ENTER ADHAAR CARD NO " required></p>
+        <button type="button" onclick="f()">Click here</button>
+ 
+        
+    </body>
+    <script>
+        var time=0;var sec=0,mints=0;
+        var i;
+       function f()
+        {
+            window.setInterval(g,200);
+
+        }
+        function g(){
+             
+           time++;sec++;
+            document.getElementById("t").innerHTML=("time value "+mints+":"+sec);
+            if(sec==60){
+                mints++;
+                sec=0;
+            }
+            if(time==200)
+            {
+                
+                alert("time out");
+                k();
+            }
+        }
+        function k()
+        {
+            time=0;
+            f();
+
+        }
+    
+    </script>
+</html>

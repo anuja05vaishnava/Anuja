@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+            TRIPLATE PROBLEM
+        </title>
+        <script>
+            function compare()
+            {
+                var countAlice=0;
+                var countBob=0;
+            var scoreAlice = document.getElementById("arr1").value;
+            var scoreBob = document.getElementById("arr2").value;
+            //alert(scoreAlice+" "+scoreBob);
+            var arrAlice = scoreAlice.split(" ");
+            var arrBob=scoreBob.split(" ");
+            if(arrAlice.length == arrBob.length)
+                {
+                    for(i=0;i<arrAlice.length;i++)
+                {
+                        if(arrAlice[i]>arrBob[i])
+                            {
+                                countAlice++;
+                            }
+                         if(arrAlice[i]<arrBob[i])
+                            {
+                                countBob++;
+                            } 
+                         if(arrAlice[i]==arrBob[i])
+                         {
+                             continue;
+                         }
+            }
+            alert("Score of Alice is : " + countAlice +"\n"+"Score of Bob is : "+ countBob);
+            }
+           else
+           {
+               alert("Input Mis-Match"+"\n"+"Please enter the valid score");
+           }
+            }
+
+        </script>
+        <style>
+          #repo
+          {
+            border: 6px solid rgb(35, 35, 148);
+            text-align: center;
+            font-size: larger;
+            font-style:italic;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: darkgrey;
+            height: 100px;
+            width: 1300px;
+            margin-left: 100px;
+            color:darkblue
+            
+            
+          }
+
+          
+         
+         </style>
+    </head>
+        
+    <body bgcolor="#E6E6FA">
+        <div id="repo">
+       <center>
+         <p1>ALICE SCORE  :   <input type="text" placeholder = "Enter Alice marks "  id= "arr1" required></p1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <p1>BOB SCORE   :  <input type="text" placeholder="Enter Bobs marks " id= "arr2" required></p1> </br></br>
+         <input type="button" value = "Evaluate" onclick= "compare()" > 
+       </center>
+    </div>
+    </bodybgcolor="#E6E6FA">
+</html>
